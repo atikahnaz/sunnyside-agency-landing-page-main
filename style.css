@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    
+   
+}
+.logo {
+    background-color: black;
+}
+header {
+    max-width: 100%;
+}
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+main img {
+    width: 100%;
+}
+
+.main-2 img {
+    width: 100%;
+}
+
+.image-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-bottom img{
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(168, 51%, 62%);
+    
+}
+
+.social-platform {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3%;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
