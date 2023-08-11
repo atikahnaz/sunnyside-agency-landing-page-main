@@ -55,7 +55,7 @@ main h3 {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     font-weight: 900;
-    padding: 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     color: hsl(212, 27%, 19%);
 }
 
@@ -63,8 +63,8 @@ main p {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     font-size: 1.1rem;
-    line-height: 1.5rem;
-    padding: 0 1.9rem;
+    line-height: 1.6rem;
+    padding: 0 1rem;
     color: hsl(232, 10%, 55%);
     text
 }
@@ -72,6 +72,8 @@ main h4 {
     font-family: 'Fraunces', serif;
     font-size: 0.9rem;
     font-weight: 900;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
     color: hsl(212, 27%, 19%);
     
 }
@@ -80,6 +82,9 @@ main img {
 }
 
 .image-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     overflow-x: hidden;
@@ -87,19 +92,79 @@ main img {
 .text-overlay {
     position: absolute;
     bottom: 0%;
+    text-align: center;
+}
+.main-2 h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+.main-2 p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+    padding: 1rem 0.5rem 2rem 0.5rem;
+}
+.graphic-design {
+    color: hsl(167, 40%, 24%);
+}
+.photography {
+    color: hsl(198, 62%, 26%);
 }
 
-.main-2 img {
-  display: flex;
+/* testimonial section*/
+.testimonials {
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+}
+.testimonials h4 {
+    color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+.profile {
+    padding-top: 2rem;
+}
+.profile img {
+    border-radius: 50%;
+    width: 20%;
+}
+.profile-description {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.8rem;
+    padding: 0 1.5rem;
+    color: hsl(213, 9%, 39%);
+}
+.profile-name {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding-top: 1.5rem;
+}
+.profile-title {
+    color: hsl(210, 4%, 67%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
-.image-bottom {
+/*.image-bottom {
     display: flex;
     flex-wrap: wrap;
 }
 .image-bottom img{
     width: 50%;
-}
+    height: 50%;
+}*/
 
 footer {
     display: flex;
