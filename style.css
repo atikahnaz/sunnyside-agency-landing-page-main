@@ -231,6 +231,7 @@ footer {
         background-color: white;
         padding: 1rem 1.5rem;
         border-radius: 2rem;
+        font-family: 'Fraunces', serif;
     }
     .transform {
         display: grid;
@@ -302,6 +303,7 @@ footer {
     .content {
         justify-content: center;
         gap: 8rem;
+        
     }
 }
 
