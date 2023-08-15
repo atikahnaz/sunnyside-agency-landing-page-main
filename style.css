@@ -27,7 +27,9 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
+.desktop-nav {
+    display: none;
+}
 .hero-text {
     font-family: 'Fraunces', serif;
     padding: 0 2rem;
@@ -38,12 +40,9 @@ body {
     top: 6%;
     color: hsl(0, 0%, 100%);
 }
-
-
 main {
     text-align: center;
 }
-
 main h3 {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
@@ -99,7 +98,7 @@ main img {
 .main-2 p {
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1.5rem;
     padding: 1rem 0.5rem 2rem 0.5rem;
 }
@@ -176,10 +175,10 @@ footer {
     background-color: hsl(168, 51%, 62%);
     padding: 6rem 0;
 }
-.logo-bottom img{
+#logo-footer{
     padding: 0;
     width: 100%;
-    filter: invert(50%) saturate(200%) hue-rotate(150deg); 
+    
 }
 
 .social-platform {
@@ -204,8 +203,34 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+   
     .hero-text {
         font-size: 2.2rem;
+    }
+
+    /*hamburger nav*/
+    .menu{
+        display: none;
+    }
+    .desktop-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        padding-right: 2rem;
+    }
+    .desktop-nav a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    #contact {
+        color: black;
+        background-color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
     }
     .transform {
         display: grid;
@@ -215,9 +240,13 @@ footer {
    
     .transform-image {
         width: 100%;
-        object-fit: cover;
+        position: relative
     }
-  
+    main img{
+        width: 100%; /* Make the image width 100% of its container */
+        height: 100%; /* Make the image height 100% of its container */
+        object-fit: cover; 
+    }
     .stand-out {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -227,36 +256,38 @@ footer {
         object-fit: cover;
     }
     .main-text {
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
         position: relative;
         text-align: left;
-        padding: 7rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        gap: 20px;
+        max-width: 100%;
     }
+    
     .main-text h4{
-        margin: 0;
-        padding: 0;
+        padding: 0;       
     }
     .main-text h3 {
-        margin: 0;
         padding: 0;
+        font-size: 3rem;
+        max-width: 80%;
     }
     .main-text p {
-        margin: 0;
         padding: 0;
     }  
 
     .main-2 {
         display: flex;
+        height: 100%;
     }
     .image-container-2 img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-
-
     .testimonials-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -271,7 +302,6 @@ footer {
     .content {
         justify-content: center;
         gap: 8rem;
-        
     }
 }
 
